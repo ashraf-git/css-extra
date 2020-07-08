@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            color: goldenrod;
+        }
+        .general-class:hover{
+            color: indianred;
+            background-color: ghostwhite;
+            font-size: 50px;
+        }
+        input:focus{
+            font-size: 43px;
+            font-weight: 500px;
+            color: hotpink;
+        }
+        li:nth-child(2n+1){
+            background-color: hotpink;
+            color: rgb(52, 17, 207);
+            font-size: x-large;
+        }
+        a:visited{
+            color: red;
+        } */
+        h1::before{
+            content: "heoo ";
+            background-color: red;
+            width: 34px;
+        }
+        h1::after{
+            content: " bye";
+            background-color: khaki;
+            font-size: 50px;
+        }
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "Hello " counter(section) " ";
+        }
+        p::after{
+            content: " ❤️";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="general-class">Vordro Class</h1>
+    <input name="email"  type="text">
+    <input name="password"  type="password">
+    <a href="https://google.com">google</a>
+    <a href="https://helloacademy.com">hello</a>
+    <ul>
+        <p>alia bat</p>
+        <p>kamal ahmend</p>
+        <p>rani begum</p>
+        <p>kamala kanto</p>
+        <p>khairul</p>
+        <p>rina khan</p>
+        <p>jamal</p>
+    </ul>
+</body>
+</html>
